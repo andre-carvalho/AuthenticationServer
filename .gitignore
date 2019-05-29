@@ -2,3 +2,4 @@
 __pycache__/
 *.cfg
 env/
+utils/JWT-python-and-Flesk.postman_collection.json
