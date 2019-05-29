@@ -1,5 +1,5 @@
 # To build image for this dockerfile use this command:
-#   docker build -t softwarevale/auth-server:v1 -f env/Dockerfile .
+#   docker build -t softwarevale/auth-server:v1 -f deploy/Dockerfile .
 #
 # To run without compose but with shell terminal use this command:
 #   docker run -p 8181:8000 --name auth-server --rm -it softwarevale/auth-server:v1 sh
@@ -28,6 +28,8 @@ RUN apk update \
     postgresql-dev \
     libpq \
     python-dev \
+    libffi-dev \
+    libjpeg-turbo-dev \
     py-pip \
     zlib-dev \
     tzdata
