@@ -204,4 +204,4 @@ api.add_resource(Logout, '/logout')
 
 
 if __name__ == '__main__':
-    app.run(host=SERVER_IP, port=5000, Debug=True)
+    app.run(host=SERVER_IP, port=8000, Debug=True)

@@ -29,7 +29,7 @@ pip freeze -l > utils/requirements.txt
 ## To run using gunicorn use:
 
 ```sh
-gunicorn -k eventlet -w 1 -b 127.0.0.1:5000 wsgi:app
+gunicorn -k eventlet -w 1 -b 127.0.0.1:8000 wsgi:app
 
 # this will start in port: 8000
 gunicorn --worker-class eventlet -w 1 wsgi:app

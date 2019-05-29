@@ -1,5 +1,5 @@
 #!/bin/bash
 
-docker run -p 5000:5000 --name auth-api-server --rm \
---env HOST=192.168.1.121 --env PORT=5432 --env DBNAME=auth_api --env DBUSER=postgres --env DBPASS=postgres \
--d auth-api-server:v1
+docker run -p 8000:8000 --name auth-api-server --rm \
+--env HOST=150.163.17.103 --env PORT=5432 --env DBNAME=auth --env DBUSER=postgres --env DBPASS=postgres \
+-d softwarevale/auth-server:v1

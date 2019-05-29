@@ -46,7 +46,7 @@ Just run the image and your service is starting. Note that command use the set e
 
 
 ```sh
-docker run -p 5000:5000 --env HOST=IP --env PORT=5432 \
+docker run -p 8000:8000 --env HOST=IP --env PORT=5432 \
 --env DBNAME=auth_api --env DBUSER=postgres \
 --env DBPASS=postgres -d auth-api-server:v1
 ```
@@ -54,7 +54,7 @@ docker run -p 5000:5000 --env HOST=IP --env PORT=5432 \
 You may run with less parameters, like this:
 
 ```sh
-docker run -p 5000:5000 --env HOST=IP --env DBNAME=dbname --env DBPASS=postgres -d auth-api-server:v1
+docker run -p 8000:8000 --env HOST=IP --env DBNAME=dbname --env DBPASS=postgres -d auth-api-server:v1
 ```
 
 Or run docker accessing the terminal and set your connection informations.
@@ -94,6 +94,6 @@ docker-compose -f deploy/docker-compose.yml down
 
 After run the server, use the command line to test:
 ```
-curl http://127.0.0.1:5000/register -d '{"email": "afacarvalho@yahoo.com.br","password": "secret_word"}' -v -H "Content-Type: application/json"
+curl http://127.0.0.1:8000/register -d '{"email": "user@my.domain.com","password": "secret_word"}' -v -H "Content-Type: application/json"
 ```
 or use [Postman](https://www.getpostman.com/downloads/).

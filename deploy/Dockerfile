@@ -2,10 +2,10 @@
 #   docker build -t softwarevale/auth-server:v1 -f deploy/Dockerfile .
 #
 # To run without compose but with shell terminal use this command:
-#   docker run -p 8181:8000 --name auth-server --rm -it softwarevale/auth-server:v1 sh
+#   docker run -p 8000:8000 --name auth-server --rm -it softwarevale/auth-server:v1 sh
 #
 # To run without compose and without shell terminal use this command:
-#   docker run -p 8181:8000 --name auth-server --rm -d softwarevale/auth-server:v1
+#   docker run -p 8000:8000 --name auth-server --rm -d softwarevale/auth-server:v1
 #
 #--------- Generic stuff all our Dockerfiles should start with so we get caching ------------
 FROM python:3.6-alpine
